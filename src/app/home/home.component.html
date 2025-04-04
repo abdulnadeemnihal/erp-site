@@ -1,48 +1,276 @@
-<p>home works!</p>
-
-<!-- First Image & Text -->
-<div class="hero">
-    <img src="https://cdn.vectorstock.com/i/500p/84/65/abstract-white-monochrome-background-vector-32028465.jpg" alt="Not Found">
-    <div class="overlay-text">
-        <h1>TechCora</h1>
-        <h2>We are engineers.</h2>
-        <h3>Building the best team of engineers and individuals, creating world-class products at</h3>
-        <h3>lightning speeds. Together, we're on a mission to Lead India To Supremacy (LiTS)</h3>
-        <h3>through technological excellence.</h3>
-    </div>
-</div>
-
-
-<div class="villan">
-    <img src="https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Asfalt-Pattern-for-Website-Background.jpg" alt="Not Found">
-    <div class="overlaz-text">
-        <h2> About us </h2>
-        <h3>We are dedicated to providing comprehensive ERP solutions that streamline business operations for</h3> 
-        <h3>everyone.Our cloud-based ERP system ensures seamless workflow optimization, data-driven decision-making,</h3> 
-        <h3>and business automation to help organizations run more efficiently. Whether you're a startup or</h3> 
-        <h3>an enterprise,our scalable and flexible solutions adapt to your needs, offering an all-in-one </h3> 
-        <h3>business suite that simplifies management.At the core of our service is innovation, ensuring</h3> 
-        <h3>businesses can operate with efficiency and clarity.We transform complexity into simplicity,</h3> 
-        <h3>allowing you to work smarter, not harder. With our tech-powered solutions,we help businesses</h3>
-        <h3>unlock their true potential and embrace the future of business management.</h3>
-    </div>
-</div>
-<div class="heroine">
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/003/267/214/small_2x/modern-clean-white-background-free-vector.jpg" alt="Not Found">
-    <div class="overlazy-text">
-        <h2> Our ERP Service </h2>
-        <h3>Our ERP service is designed to provide businesses with a powerful, all-in-one solution for</h3>
-        <h3>managing their operations efficiently. With seamless integration, automation, and real-time</h3>
-        <h3>data insights, our system helps organizations streamline processes, improve productivity,and</h3>
-        <h3>make informed decisions. Whether you're a small startup or a large enterprise, our scalable</h3>
-        <h3>and flexible ERP solution adapts to your needs, ensuring smooth business operations.</h3> 
-        <h3>Built with cutting-edge technology, our platform enhances workflow optimization,</h3>
-        <h3> financial management,inventory control,and customer relationship management (CRM),</h3>
-        <h3>all in one place. Experience efficiency, accuracy, and growth with our </h3>
-        <h3>ERP service—helping you work smarter, not harder.</h3>
-        <h4>For information contact us</h4>
-        <h5>phone number:+91 98843 41528</h5>
-    </div>
-</div>
-
-<!-- Additional Sections -->
+<!-- Home Component HTML -->
+<div class="erp-container">
+    <header class="header">
+      <div class="logo-container">
+        <img src="assets/images/logo.jpg" alt="CoraERP Logo" class="logo">
+        <h1 class="company-name">CoraERP Service</h1>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-badge">Leading ERP Provider</span>
+        <h1 class="hero-title">Next-Generation ERP<br>for Modern Business</h1>
+        <p class="hero-text">Transform your operations with our advanced ERP platform. Featuring AI-powered analytics, cloud-native architecture, and 24/7 expert support to drive your business forward.</p>
+        <div class="cta-buttons">
+          <button class="cta-primary"><i class="fas fa-play-circle"></i> Watch Demo</button>
+          <button class="cta-secondary"><i class="fas fa-arrow-right"></i> Explore Platform</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/erp-dashboard.png" alt="ERP Dashboard" class="dashboard-image">
+      </div>
+    </section>
+  
+    <section class="modules" id="solutions">
+      <h2 class="section-title">Core ERP Modules</h2>
+      <div class="module-grid">
+        <div class="module-item" (click)="expandModule('inventory')">
+          <div class="module-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <h3>Inventory Management</h3>
+          <p>Track stock levels, orders, and deliveries in real-time with comprehensive reporting.</p>
+        </div>
+        <div class="module-item" (click)="expandModule('finance')">
+          <div class="module-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3>Finance & Accounting</h3>
+          <p>Streamline financial operations with integrated accounting, billing, and reporting tools.</p>
+        </div>
+        <div class="module-item" (click)="expandModule('hr')">
+          <div class="module-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>HR & Payroll</h3>
+          <p>Manage employee data, attendance, performance, and automated payroll processing.</p>
+        </div>
+        <div class="module-item" (click)="expandModule('crm')">
+          <div class="module-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>CRM & Sales</h3>
+          <p>Track leads, manage customer relationships, and optimize your sales pipeline.</p>
+        </div>
+        <div class="module-item" (click)="expandModule('production')">
+          <div class="module-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Production Management</h3>
+          <p>Plan and monitor manufacturing processes, resources, and quality control.</p>
+        </div>
+        <div class="module-item" (click)="expandModule('procurement')">
+          <div class="module-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h3>Procurement</h3>
+          <p>Optimize purchasing workflows, vendor management, and supply chain operations.</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="features" id="features">
+      <h2 class="section-title">Why Choose Our ERP Solutions</h2>
+      <div class="feature-cards">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Quick Implementation</h3>
+          <p>Get your custom ERP system up and running in record time with our efficient implementation process.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Fully Customizable</h3>
+          <p>Tailor-made solutions designed specifically for your business processes and requirements.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Scalable Growth</h3>
+          <p>Our ERP systems grow with your business, adapting to your changing needs over time.</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="process">
+      <h2 class="section-title">Our Implementation Process</h2>
+      <div class="process-timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content">
+            <h3>Discovery & Analysis</h3>
+            <p>We analyze your business needs and processes to identify the perfect ERP solution.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content">
+            <h3>Solution Design</h3>
+            <p>Our experts design a customized solution specific to your business requirements.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content">
+            <h3>Development</h3>
+            <p>We build your custom ERP system with modern technologies and best practices.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-number">4</div>
+          <div class="timeline-content">
+            <h3>Testing & Deployment</h3>
+            <p>Rigorous testing ensures a smooth deployment with minimal disruption.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+          <div class="timeline-number">5</div>
+          <div class="timeline-content">
+            <h3>Training & Support</h3>
+            <p>We provide comprehensive training and ongoing support for your team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="testimonials" id="clients">
+      <h2 class="section-title">Client Success Stories</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial-item active">
+          <p class="testimonial-quote">"TechCora transformed our operations with their custom ERP solution. Our productivity increased by 40% within just 3 months."</p>
+          <div class="testimonial-author">
+            <img src="assets/images/client1.jpg" alt="Client" class="author-image">
+            <div class="author-details">
+              <h4>Abin Paul</h4>
+              <p>CEO, Global Industries Ltd.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-quote">"The team at TechCora delivered exactly what we needed. Their implementation was fast, and the system is incredibly user-friendly."</p>
+          <div class="testimonial-author">
+            <img src="assets/images/client2.jpg" alt="Client" class="author-image">
+            <div class="author-details">
+              <h4>Arun Kumar</h4>
+              <p>Operations Director, Tech Solutions</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-quote">"We've tried other ERP systems before, but TechCora's custom solution finally gave us the flexibility and performance we needed."</p>
+          <div class="testimonial-author">
+            <img src="assets/images/client3.jpg" alt="Client" class="author-image">
+            <div class="author-details">
+              <h4>John Doe</h4>
+              <p>CTO, Innovate Enterprises</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <span class="carousel-dot active" (click)="nextTestimonial()"></span>
+        <span class="carousel-dot" (click)="nextTestimonial()"></span>
+        <span class="carousel-dot" (click)="nextTestimonial()"></span>
+      </div>
+    </section>
+  
+    <section class="contact-form" id="contact">
+      <h2 class="section-title">Let's Discuss Your Requirements</h2>
+      <form class="form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" formControlName="name" placeholder="Your Name" required>
+          <div class="error-message" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+            Name is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" formControlName="email" placeholder="your@email.com" required>
+          <div class="error-message" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+            Please enter a valid email
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" formControlName="phone" placeholder="Your Phone Number" required>
+          <div class="error-message" *ngIf="contactForm.get('phone')?.touched && contactForm.get('phone')?.invalid">
+            Please enter a valid phone number
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" formControlName="company" placeholder="Your Company" required>
+          <div class="error-message" *ngIf="contactForm.get('company')?.touched && contactForm.get('company')?.invalid">
+            Company name is required
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Your Requirements</label>
+          <textarea id="message" formControlName="message" rows="4" placeholder="Tell us about your business and ERP needs" required></textarea>
+          <div class="error-message" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+            Please describe your requirements
+          </div>
+        </div>
+        <button type="submit" class="submit-button" [disabled]="!contactForm.valid || isSubmitting">
+          <span *ngIf="!isSubmitting">Submit Request</span>
+          <span *ngIf="isSubmitting">Sending...</span>
+        </button>
+      </form>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/images/logo.jpg" alt="TechCora Logo" class="footer-logo-img">
+          <p>CoraERP Services</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i>No.6,dubai bus stand ,dubai main road,dubai-560001</p>
+          <p><i class="fas fa-phone"></i> +91-98843-41528</p>
+          <p><i class="fas fa-envelope"></i> info&#64;CoraERP.in</p>
+        </div>
+        <div class="footer-social">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechCora Corporation Pvt Limited. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
