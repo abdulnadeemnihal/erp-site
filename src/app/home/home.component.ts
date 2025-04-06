@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 import * as AOS from 'aos';
 
 @Component({
@@ -12,7 +12,6 @@ import * as AOS from 'aos';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RouterOutlet
   ]
 })
 export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
