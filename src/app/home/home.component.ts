@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterOutlet } from '@angular/router';
@@ -7,10 +6,9 @@ import * as AOS from 'aos';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['home.component.css'],
+  styleUrls: ['./home.component.css'],
   standalone: true,
   imports: [
-    CommonModule,
     ReactiveFormsModule,
     RouterOutlet
   ]
